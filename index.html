@@ -184,9 +184,12 @@ section{padding-block:clamp(72px,11vw,140px);border-top:1px solid var(--line)}
 .svc.accent h3{font-size:clamp(34px,3.6vw,48px)}
 .dots{display:none}
 @media (max-width:900px){
+  html{overflow-x:clip}
+  body{width:100%;max-width:100%;overflow-x:clip}
+  .wrap,.groups,.group{min-width:0;max-width:100%}
   .group-head{grid-template-columns:1fr auto}
   .group-head p{grid-column:1 / -1;grid-row:2}
-  .row,.row.duo{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:calc(-1 * max(20px,env(safe-area-inset-left,0px)));padding-inline:max(20px,env(safe-area-inset-left,0px));scroll-padding-inline:max(20px,env(safe-area-inset-left,0px));scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .row,.row.duo{display:flex;width:100%;max-width:100%;min-width:0;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-snap-stop:always;gap:12px;margin-inline:0;padding-inline:0;scroll-padding-inline:0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .row::-webkit-scrollbar{display:none}
   .row .svc{flex:0 0 min(82%,380px);scroll-snap-align:start}
   .row .svc:hover{transform:none}
@@ -1017,6 +1020,7 @@ document.addEventListener("click",e=>{
 /* ---------- swipe dots ---------- */
 $$(".group").forEach(g=>{
   const row=$(".row",g), dots=$$(".dots button",g), cards=$$(".svc",row);
+  dots.forEach((dot,i)=>dot.addEventListener("click",()=>cards[i]?.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})));
   row.addEventListener("scroll",()=>{
     const x=row.scrollLeft, w=cards[0].offsetWidth+12;
     let i=Math.round(x/w); if(row.scrollLeft+row.clientWidth>=row.scrollWidth-4) i=cards.length-1;
