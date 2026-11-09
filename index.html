@@ -90,7 +90,7 @@ section{padding-block:clamp(72px,11vw,140px);border-top:1px solid var(--line)}
 .hero-line{margin-top:44px;display:flex;align-items:center;gap:16px}
 .hero-line::before{content:"";height:1px;width:56px;background:var(--champagne);transform-origin:left;animation:draw 1.4s .9s var(--ease) both}
 .hero-visual{position:relative;aspect-ratio:4/5;max-width:100%;min-height:0}
-.hero-visual .img-slot{position:absolute;inset:0}
+.hero-visual .img-slot{position:absolute;inset:0;background-position:60% 20%}
 .hero-tag{position:absolute;left:-1px;bottom:28px;background:var(--ink);border:1px solid var(--line);padding:18px 22px;max-width:78%}
 .hero-tag .label{display:block;margin-bottom:6px;color:var(--muted)}
 .hero-tag p{font-family:var(--f-display);font-size:24px;line-height:1.15;font-style:italic}
@@ -101,7 +101,7 @@ section{padding-block:clamp(72px,11vw,140px);border-top:1px solid var(--line)}
 @keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
 .hero-visual{animation:unveil 1.6s .15s var(--ease) both}
 @keyframes unveil{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
-@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-visual{aspect-ratio:4/3}}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-visual{aspect-ratio:4/3}.hero-visual .img-slot{background-position:58% 16%}}
 
 /* image slots — placeholder art until real photos are added */
 .img-slot{background-size:cover;background-position:center;overflow:hidden;position:relative}
@@ -917,7 +917,7 @@ const CONFIG = {
   },
   // Фото: вставьте ссылку или data:URI — заглушка заменится картинкой
   images: {
-    hero: "", service1: "assets/carousels.jpg", service2: "assets/websites.jpg", service3: "assets/guides.jpg", service4: "assets/quizzes.jpg",
+    hero: "assets/hero-founders.jpg", service1: "assets/carousels.jpg", service2: "assets/websites.jpg", service3: "assets/guides.jpg", service4: "assets/quizzes.jpg",
     service5: "assets/gamification.jpg", service6: "assets/ai-video.jpg", service7: "assets/funnels.jpg", service8: "assets/ai-assistants.jpg", aiCard: "assets/ai-assistants.jpg", idea: ""
   }
 };
