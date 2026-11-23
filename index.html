@@ -237,6 +237,15 @@ footer button:hover { color: var(--cream); }
 @media (prefers-reduced-motion: reduce) {
   .rise, .row { transition: none; }
 }
+/* Site-to-Lis contextual Telegram links */
+.lis-actions { display:flex; flex-wrap:wrap; align-items:center; gap:16px 22px; margin-top:18px; }
+.lis-actions .btn { font-size:10px; padding:12px 17px; }
+.lis-actions .link { display:inline-block; font-size:10px; }
+.row-lis-actions { display:flex; gap:16px; flex-wrap:wrap; align-items:center; margin-top:12px; }
+.row-lis-actions .link { display:inline-block; font-size:10px; white-space:nowrap; }
+.ru-availability { margin-top:24px; font-size:12px; color:var(--mute); }
+.ru-availability a { color:var(--cream); text-decoration:underline; text-underline-offset:4px; }
+
 </style>
 
 <div class="intro" id="intro" role="presentation">
@@ -255,7 +264,7 @@ footer button:hover { color: var(--cream); }
         <a class="plain" href="#cases" data-i="nav.cases">Cases</a>
         <a class="plain" href="#process" data-i="nav.process">Process</a>
         <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en" class="on">EN</button><button type="button" data-lang="ru">RU</button></div>
-        <a class="btn" href="#contact" data-i="nav.cta">Send your account</a>
+        <a class="btn" href="https://t.me/Foxaifriend_bot?start=wm_us_services_en" data-lis-market="us" data-lis-service="all" data-lis-intent="details" target="_blank" rel="noopener noreferrer" data-i="nav.cta">Ask Lis</a>
       </div>
     </nav>
     <div class="hero-body" id="top">
@@ -263,7 +272,7 @@ footer button:hover { color: var(--cream); }
       <h1 class="rise" style="--i:2" data-i="hero.h1">You don't need <em>more views.</em></h1>
       <p class="lede rise" style="--i:3" data-i="hero.lede">You need the ones you already have to book, buy and come back. We find where you lose them and close the leak: content, funnels, automation.</p>
       <div class="actions rise" style="--i:4">
-        <a class="btn" href="#contact"><span data-i="hero.cta">Send your account</span> <span aria-hidden="true">→</span></a>
+        <a class="btn" href="https://t.me/Foxaifriend_bot?start=wm_us_services_en" data-lis-market="us" data-lis-service="all" data-lis-intent="details" target="_blank" rel="noopener noreferrer"><span data-i="hero.cta">Talk to Lis</span> <span aria-hidden="true">→</span></a>
         <a class="link" href="#services" data-i="hero.link">See what we do</a>
       </div>
     </div>
@@ -297,7 +306,7 @@ footer button:hover { color: var(--cream); }
           <div><dt data-i="lbl.best">Best for</dt><dd data-i="p1.best">Businesses that already have someone running Instagram but need stronger, more considered content.</dd></div>
           <div><dt data-i="lbl.res">Result</dt><dd data-i="p1.res">15 ready-to-publish posts and a plan for using them.</dd></div>
         </dl>
-      </article><article class="pack">
+      <div class="lis-actions"><a class="btn lis-service-link" data-lis-market="us" data-lis-service="content" data-lis-intent="order" data-lis-label="order" href="https://t.me/Foxaifriend_bot?start=wm_us_o_content_en" target="_blank" rel="noopener noreferrer">Discuss a project</a><a class="link lis-service-link" data-lis-market="us" data-lis-service="content" data-lis-intent="details" data-lis-label="details" href="https://t.me/Foxaifriend_bot?start=wm_us_d_content_en" target="_blank" rel="noopener noreferrer">Learn more</a></div></article><article class="pack">
         <div class="tag">02 / SMM Strategy</div>
         <h3 data-i="p2.t">A strategy and step-by-step plan, without content production</h3>
         <p class="lead" data-i="p2.l">A diagnosis and a 30-day plan. Your team stays, we fix the direction.</p>
@@ -306,7 +315,7 @@ footer button:hover { color: var(--cream); }
           <div><dt data-i="lbl.best">Best for</dt><dd data-i="p2.best">Founders, personal brands and companies that create content themselves or have their own team, but need professional marketing direction.</dd></div>
           <div><dt data-i="lbl.res">Result</dt><dd data-i="p2.res">A finished strategy and a step-by-step plan, without content production or account management.</dd></div>
         </dl>
-      </article><article class="pack feat">
+      <div class="lis-actions"><a class="btn lis-service-link" data-lis-market="us" data-lis-service="strategy" data-lis-intent="order" data-lis-label="order" href="https://t.me/Foxaifriend_bot?start=wm_us_o_strategy_en" target="_blank" rel="noopener noreferrer">Discuss a project</a><a class="link lis-service-link" data-lis-market="us" data-lis-service="strategy" data-lis-intent="details" data-lis-label="details" href="https://t.me/Foxaifriend_bot?start=wm_us_d_strategy_en" target="_blank" rel="noopener noreferrer">Learn more</a></div></article><article class="pack feat">
         <div class="tag">03 / Full SMM Management</div>
         <h3 data-i="p3.t">A complete content system, end to end</h3>
         <p class="lead" data-i="p3.l">We run it. You read one report a month.</p>
@@ -315,9 +324,10 @@ footer button:hover { color: var(--cream); }
           <div><dt data-i="lbl.best">Best for</dt><dd data-i="p3.best">Businesses and experts who want to grow Instagram systematically and turn interest into enquiries without doing daily content themselves.</dd></div>
           <div><dt data-i="lbl.res">Result</dt><dd data-i="p3.res">20 posts a month, regular Stories, managed content and performance analysis.</dd></div>
         </dl>
-      </article></div>
+      <div class="lis-actions"><a class="btn lis-service-link" data-lis-market="us" data-lis-service="smm" data-lis-intent="order" data-lis-label="order" href="https://t.me/Foxaifriend_bot?start=wm_us_o_smm_en" target="_blank" rel="noopener noreferrer">Discuss a project</a><a class="link lis-service-link" data-lis-market="us" data-lis-service="smm" data-lis-intent="details" data-lis-label="details" href="https://t.me/Foxaifriend_bot?start=wm_us_d_smm_en" target="_blank" rel="noopener noreferrer">Learn more</a></div></article></div>
     <p class="eyebrow also" data-i="svc.also">Also in the agency</p>
-    <div class="rows"><div class="row"><h3 data-i="al.Funnels.h">AI funnels</h3><p data-i="al.Funnels.p">Automated paths from the first view to a booked call, built around how buyers actually decide.</p></div><div class="row"><h3 data-i="al.Assist.h">AI assistants</h3><p data-i="al.Assist.p">Custom assistants that answer, qualify and follow up in your brand's own voice.</p></div><div class="row"><h3 data-i="al.Sites.h">Websites</h3><p data-i="al.Sites.p">Fast, cinematic sites and landing pages that carry the brand's look all the way to the form.</p></div><div class="row"><h3 data-i="al.Ads.h">Targeted ads and trends</h3><p data-i="al.Ads.p">Targeted advertising and trend research, aimed at the audience that is ready to buy.</p></div></div>
+    <div class="rows"><div class="row"><h3 data-i="al.Funnels.h">AI funnels</h3><p data-i="al.Funnels.p">Automated paths from the first view to a booked call, built around how buyers actually decide.</p><div class="row-lis-actions"><a class="link lis-service-link" data-lis-market="us" data-lis-service="funnels" data-lis-intent="details" data-lis-label="details" href="https://t.me/Foxaifriend_bot?start=wm_us_d_funnels_en" target="_blank" rel="noopener noreferrer">Learn more</a><a class="link lis-service-link" data-lis-market="us" data-lis-service="funnels" data-lis-intent="order" data-lis-label="order" href="https://t.me/Foxaifriend_bot?start=wm_us_o_funnels_en" target="_blank" rel="noopener noreferrer">Discuss a project</a></div></div><div class="row"><h3 data-i="al.Assist.h">AI assistants</h3><p data-i="al.Assist.p">Custom assistants that answer, qualify and follow up in your brand's own voice.</p><div class="row-lis-actions"><a class="link lis-service-link" data-lis-market="us" data-lis-service="assistants" data-lis-intent="details" data-lis-label="details" href="https://t.me/Foxaifriend_bot?start=wm_us_d_assistants_en" target="_blank" rel="noopener noreferrer">Learn more</a><a class="link lis-service-link" data-lis-market="us" data-lis-service="assistants" data-lis-intent="order" data-lis-label="order" href="https://t.me/Foxaifriend_bot?start=wm_us_o_assistants_en" target="_blank" rel="noopener noreferrer">Discuss a project</a></div></div><div class="row"><h3 data-i="al.Sites.h">Websites</h3><p data-i="al.Sites.p">Fast, cinematic sites and landing pages that carry the brand's look all the way to the form.</p><div class="row-lis-actions"><a class="link lis-service-link" data-lis-market="us" data-lis-service="websites" data-lis-intent="details" data-lis-label="details" href="https://t.me/Foxaifriend_bot?start=wm_us_d_websites_en" target="_blank" rel="noopener noreferrer">Learn more</a><a class="link lis-service-link" data-lis-market="us" data-lis-service="websites" data-lis-intent="order" data-lis-label="order" href="https://t.me/Foxaifriend_bot?start=wm_us_o_websites_en" target="_blank" rel="noopener noreferrer">Discuss a project</a></div></div><div class="row"><h3 data-i="al.Ads.h">Targeted ads and trends</h3><p data-i="al.Ads.p">Targeted advertising and trend research, aimed at the audience that is ready to buy.</p><div class="row-lis-actions"><a class="link lis-service-link" data-lis-market="us" data-lis-service="ads" data-lis-intent="details" data-lis-label="details" href="https://t.me/Foxaifriend_bot?start=wm_us_d_ads_en" target="_blank" rel="noopener noreferrer">Learn more</a><a class="link lis-service-link" data-lis-market="us" data-lis-service="ads" data-lis-intent="order" data-lis-label="order" href="https://t.me/Foxaifriend_bot?start=wm_us_o_ads_en" target="_blank" rel="noopener noreferrer">Discuss a project</a></div></div></div>
+<p class="ru-availability"><span data-lis-ru-label>For projects in Russia: websites, video editing, quizzes and AI tools.</span> <a data-lis-market="ru" data-lis-service="all" data-lis-intent="details" href="https://t.me/Foxaifriend_bot?start=wm_ru_services_ru" target="_blank" rel="noopener noreferrer" data-lis-ru-link>Ask Lis about Russia services</a></p>
   </section>
 
   <section id="cases">
@@ -371,7 +381,7 @@ footer button:hover { color: var(--cream); }
 
   <section class="close" id="contact">
     <h2 data-i="close.h2">Send us your account. <em>We'll show you where clients slip away.</em></h2>
-    <a class="btn" href="#contact"><span data-i="close.cta">Send your account</span> <span aria-hidden="true">→</span></a>
+    <a class="btn" href="https://t.me/Foxaifriend_bot?start=wm_us_services_en" data-lis-market="us" data-lis-service="all" data-lis-intent="details" target="_blank" rel="noopener noreferrer"><span data-i="close.cta">Discuss a project</span> <span aria-hidden="true">→</span></a>
   </section>
 
   <footer>
@@ -1042,11 +1052,37 @@ footer button:hover { color: var(--cream); }
 (function () {
   'use strict';
   var RU = {"p1.b0": "10 Reels в месяц: идеи, сценарии, монтаж, обложки и тексты", "p1.b1": "5 каруселей: структура, копирайтинг и дизайн", "p1.b2": "Распределение публикаций по целям: охваты, вовлечение, экспертность, продажи", "p1.b3": "Контент-календарь с датами публикаций", "p1.b4": "Рекомендации по Stories: темы, частота и CTA", "p1.t": "Готовый контент для Instagram", "p1.l": "Контент, готовый к публикации и сделанный продавать.", "lbl.best": "Кому подходит", "p1.best": "Бизнесу, у которого уже есть человек для ведения Instagram, но не хватает качественного, продуманного контента.", "lbl.res": "Результат", "p1.res": "15 готовых публикаций и план их использования.", "p2.b0": "Аудит текущего аккаунта", "p2.b1": "Анализ целевой аудитории и конкурентов", "p2.b2": "Позиционирование и рекомендации по оформлению профиля", "p2.b3": "Контент-стратегия с распределением форматов по маркетинговым целям", "p2.b4": "Контент-план на 30 дней: темы Reels, каруселей и Stories", "p2.b5": "Рекомендации по продвижению, вовлечению и конверсии в заявки", "p2.b6": "KPI и система оценки результатов", "p2.t": "Стратегия и пошаговый план без производства контента", "p2.l": "Диагностика и план на 30 дней. Команда ваша, направление наше.", "p2.best": "Предпринимателям, личным брендам и компаниям, которые создают контент самостоятельно или имеют собственную команду, но нуждаются в профессиональном маркетинговом направлении.", "p2.res": "Готовая стратегия и пошаговый план реализации без производства контента и ведения.", "p3.b0": "Разработка и регулярная корректировка SMM-стратегии", "p3.b1": "10 Reels в месяц: от концепции до публикации", "p3.b2": "10 каруселей в месяц: тексты, дизайн и оформление", "p3.b3": "Контент-матрица по целям: привлечение, экспертность, доверие, продажи", "p3.b4": "Создание и публикация Stories 5 дней в неделю", "p3.b5": "Контент-календарь и публикация материалов", "p3.b6": "Оптимизация подписей, ключевых слов и CTA", "p3.b7": "Анализ охватов, вовлечения, роста аудитории и переходов к заявкам", "p3.b8": "Ежемесячный отчёт с рекомендациями", "p3.t": "Полноценная контент-система под ключ", "p3.l": "Мы ведём. Вы читаете один отчёт в месяц.", "p3.best": "Бизнесу и экспертам, которые хотят системно развивать Instagram, привлекать целевую аудиторию и превращать интерес в обращения, не занимаясь ежедневным контентом самостоятельно.", "p3.res": "20 публикаций ежемесячно, регулярные Stories, управление контентом и анализ эффективности.", "al.Funnels.h": "AI-воронки", "al.Funnels.p": "Автоматические воронки от первого просмотра до записи на звонок, выстроенные под то, как клиенты реально принимают решения.", "al.Assist.h": "AI-ассистенты", "al.Assist.p": "Персональные ассистенты, которые отвечают, квалифицируют заявки и возвращают клиентов в голосе вашего бренда.", "al.Sites.h": "Сайты", "al.Sites.p": "Быстрые кинематографичные сайты и лендинги, которые несут стиль бренда до самой формы заявки.", "al.Ads.h": "Таргет и тренды", "al.Ads.p": "Таргетированная реклама и анализ трендов: показываем тем, кто готов купить.", "pil.0": "Стратегии", "pil.1": "Воронки", "pil.2": "Сайты", "pil.3": "Конверсии", "pil.4": "Таргетированная реклама", "pil.5": "Тренды", "cq.who": "Косметология · Квиз-воронка", "cq.big": "150+", "cq.h": "заявок за 14 дней.", "cq.p": "Квиз на 30 секунд заменил переписку и бесконечные консультации. Рекламный бюджет остался минимальным.", "cq.c0": "Минимальные затраты на рекламу", "cq.c1": "Стабильный поток качественных лидов", "ch.who": "Мастер массажа · Хьюстон", "ch.big": "Свой салон", "ch.h": "Из домашнего кабинета в свой салон.", "ch.p": "Клиенты шли только по рекомендациям. Мы разобрали конкурентов, переоформили страницу, выстроили позиционирование, настроили онлайн-запись и коллаборации с блогерами. Теперь: свой салон, команда, премиум-клиенты.", "ch.c0": "Свой салон", "ch.c1": "Команда", "ch.c2": "Премиум-сегмент", "cd.who": "Мастер маникюра · Денвер", "cd.big": "Владелец салона", "cd.h": "Владелец салона, без рекламы.", "cd.p": "Её страх: «подниму цены, потеряю клиентов». Когда появился стабильный поток новых, это перестало быть риском. Reels залетели и привели подписчиков.", "cd.c0": "Рост через Instagram", "cd.c1": "Без рекламы", "sp0.h": "Диагностика", "sp0.p": "Копаем, пока не назовём точное место, где вы теряете клиентов.", "sp1.h": "План", "sp1.p": "План на 30 дней и KPI, за которые мы отвечаем.", "sp2.h": "Сборка", "sp2.p": "Контент, воронки и автоматизация, которые закрывают утечки.", "sp3.h": "Отчёт", "sp3.p": "Охваты показываем только рядом с тем, что они принесли.", "nav.services": "Услуги", "nav.cases": "Кейсы", "nav.process": "Процесс", "nav.cta": "Прислать аккаунт", "hero.eyebrow": "Креативное digital-агентство", "hero.h1": "Вам не нужно <em>больше просмотров.</em>", "hero.lede": "Вам нужно, чтобы те, что уже есть, записывались, покупали и возвращались. Мы находим, где вы их теряете, и закрываем утечку: контентом, воронками, автоматизацией.", "hero.cta": "Прислать аккаунт", "hero.link": "Смотреть, что мы делаем", "strip.0": "137 160 $", "strip.1": "150+", "strip.2": "4,07 млн", "strip.3": "Соцсети", "man.eyebrow": "Куда уходят деньги", "man.h2": "Четыре места, где клиенты <em>тихо пропадают.</em>", "svc.eyebrow": "Услуги", "svc.h2": "Выберите, сколько <em>нам передать.</em>", "svc.also": "Также в агентстве", "cases.eyebrow": "Избранные работы", "cases.h2": "Результаты <em>в цифрах</em>", "cf.h": "Настроили один раз. Продаёт до сих пор.", "cf.p": "137 160 $ валового дохода через одну воронку на сайте. Работает сама, без ежедневных усилий.", "st.rev.l": "Валовой доход за всё время", "st.rev.v": "137 160 $", "st.pay.l": "Успешных платежей", "st.pay.v": "383", "rc.l": "Reels мастера маникюра, просмотры", "rc.0": "4,07 млн", "rc.1": "1,19 млн", "rc.2": "0,99 млн", "proc.eyebrow": "Процесс", "proc.h2": "Четыре шага. <em>Без тумана.</em>", "close.h2": "Пришлите аккаунт. <em>Покажем, где вы теряете клиентов.</em>", "close.cta": "Прислать аккаунт", "foot.replay": "Показать интро", "skip": "Пропустить интро", "strip.0l": "валовый доход за всё время, одна воронка", "strip.1l": "заявок за 2 недели", "strip.2l": "просмотров одного Reel", "lk0.h": "Видят и забывают.", "lk0.p": "Ничего не цепляет. Позиционирование, контент и тренды, на которые аудитория реагирует сейчас.", "lk1.h": "Хотят купить и не понимают как.", "lk1.p": "Нет понятного пути. Воронка, квиз, сайт, запись в один шаг.", "lk2.h": "Пишут и ждут.", "lk2.p": "AI-ассистент отвечает и отбирает заявки за секунды, днём и ночью.", "lk3.h": "Купили один раз и пропали.", "lk3.p": "Никто их не возвращает. Автоматическое повторное касание.", "cases.note": "Кейсы с американского рынка. Метод работает в любой стране: решение о покупке принимается везде одинаково."};
+  RU["nav.cta"] = "Спросить Лиса";
+  RU["hero.cta"] = "Обсудить проект";
+  RU["close.cta"] = "Написать Лису";
   var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-i]'));
   var skip = document.getElementById('skip');
   var EN = {};
   nodes.forEach(function (n) { EN[n.getAttribute('data-i')] = n.innerHTML; });
   EN.skip = skip.textContent;
+  var lisLinks = document.querySelectorAll('[data-lis-service]');
+  function updateLisLinks(lang) {
+    Array.prototype.forEach.call(lisLinks, function (a) {
+      var market = a.getAttribute('data-lis-market') || 'us';
+      var service = a.getAttribute('data-lis-service') || 'all';
+      var intent = a.getAttribute('data-lis-intent') || 'details';
+      var route = service === 'all'
+        ? 'wm_' + market + '_services_' + lang
+        : 'wm_' + market + '_' + (intent === 'order' ? 'o' : 'd') + '_' + service + '_' + lang;
+      a.setAttribute('href', 'https://t.me/Foxaifriend_bot?start=' + route);
+      var label = a.getAttribute('data-lis-label');
+      if (label) a.textContent = lang === 'ru'
+        ? (label === 'order' ? 'Обсудить заказ' : 'Узнать подробнее')
+        : (label === 'order' ? 'Discuss a project' : 'Learn more');
+    });
+    var ruLab = document.querySelector('[data-lis-ru-label]');
+    var ruA = document.querySelector('[data-lis-ru-link]');
+    if (ruLab) ruLab.textContent = lang === 'ru'
+      ? 'Для проектов из России: сайты, монтаж видео, квизы и ИИ-решения.'
+      : 'For projects in Russia: websites, video editing, quizzes and AI tools.';
+    if (ruA) ruA.textContent = lang === 'ru'
+      ? 'Узнать об услугах для России' : 'Ask Lis about Russia services';
+  }
   var btns = document.querySelectorAll('.lang button');
   function set(lang) {
     nodes.forEach(function (n) {
@@ -1054,6 +1090,7 @@ footer button:hover { color: var(--cream); }
       if (v != null) n.innerHTML = v;
     });
     skip.textContent = lang === 'ru' ? RU.skip : EN.skip;
+    updateLisLinks(lang);
     document.documentElement.lang = lang;
     Array.prototype.forEach.call(btns, function (b) { b.classList.toggle('on', b.getAttribute('data-lang') === lang); });
     try { localStorage.setItem('wm-lang', lang); } catch (e) {}
@@ -1062,7 +1099,7 @@ footer button:hover { color: var(--cream); }
   try { lang = localStorage.getItem('wm-lang') || ''; } catch (e) {}
   if (lang !== 'en' && lang !== 'ru') lang = /^ru/i.test(navigator.language || '') ? 'ru' : 'en';
   Array.prototype.forEach.call(btns, function (b) { b.addEventListener('click', function () { set(b.getAttribute('data-lang')); }); });
-  if (lang === 'ru') set('ru');
+  set(lang);
 })();
 </script>
 </body>
